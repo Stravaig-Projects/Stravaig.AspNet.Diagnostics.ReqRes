@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example", "Example\Example.csproj", "{9DF2FDCB-5126-4EF1-A788-3B53E6CAA13C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stravaig.AspNet.Diagnostics.ReqRes", "Stravaig.AspNet.Diagnostics.ReqRes\Stravaig.AspNet.Diagnostics.ReqRes.csproj", "{0D3DE8F1-D2CB-4BE4-8E43-51FDF1C2BC6B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DF2FDCB-5126-4EF1-A788-3B53E6CAA13C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DF2FDCB-5126-4EF1-A788-3B53E6CAA13C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DF2FDCB-5126-4EF1-A788-3B53E6CAA13C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DF2FDCB-5126-4EF1-A788-3B53E6CAA13C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D3DE8F1-D2CB-4BE4-8E43-51FDF1C2BC6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D3DE8F1-D2CB-4BE4-8E43-51FDF1C2BC6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D3DE8F1-D2CB-4BE4-8E43-51FDF1C2BC6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D3DE8F1-D2CB-4BE4-8E43-51FDF1C2BC6B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
