@@ -1,0 +1,19 @@
+name: Build Stravaig.AspNet.Diagnostics.ReqRes
+on: push
+
+jobs:
+  build:
+    name: Stravaig Request Response Diagnostics
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - uses: actions/setup-dotnet@v1
+        name: Setup .NET Core
+        with:
+          dotnet-version: 3.1.402
+
+      - name: Build Solution
+        run: dotnet build src/Stravaig.AspNet.Diagnostics.ReqRes.sln --configuration Release
