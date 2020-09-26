@@ -9,6 +9,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Stravaig.AspNet.Diagnostics.ReqRes
 {
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class ReqResDiagnosticMiddleware
     {
         private readonly RequestDelegate _next;
@@ -22,11 +23,44 @@ namespace Stravaig.AspNet.Diagnostics.ReqRes
 
         public async Task Invoke(HttpContext context)
         {
-            context.Request.EnableBuffering();
+            await LogRequest(context);
+            var originalBodyStream = context.Response.Body;
+            using (var responseBody = new MemoryStream())
+            {
+                context.Response.Body = responseBody;
+                await _next(context);
+                await LogResponse(context);
+                context.Response.Body.Seek(0, SeekOrigin.Begin);
+                await responseBody.CopyToAsync(originalBodyStream);
+            }
+        }
 
-            StringBuilder requestLog = new StringBuilder();
-            
+        private async Task LogResponse(HttpContext context)
+        {
+            var res = context.Response;
+            StringBuilder requestLog = new StringBuilder("Response:"+Environment.NewLine);
+            foreach (var header in res.Headers)
+            {
+                requestLog.AppendLine($"{header.Key}: {string.Join(";", header.Value.Cast<string>())}");
+            }
+
+            res.Body.Seek(0, SeekOrigin.Begin);
+            var responseReader = new StreamReader(res.Body);
+            var content = await responseReader.ReadToEndAsync();
+            if (!string.IsNullOrEmpty(content))
+            {
+                requestLog.AppendLine();
+                requestLog.AppendLine(content);
+            }
+
+            _logger.LogInformation(requestLog.ToString());
+        }
+
+        private async Task LogRequest(HttpContext context)
+        {
             var req = context.Request;
+            req.EnableBuffering();
+            StringBuilder requestLog = new StringBuilder("Request:" + Environment.NewLine);
             requestLog.AppendLine($"{req.Method} {req.GetDisplayUrl()}");
             foreach (var header in req.Headers)
             {
@@ -40,9 +74,9 @@ namespace Stravaig.AspNet.Diagnostics.ReqRes
                 requestLog.AppendLine();
                 requestLog.AppendLine(content);
             }
+
             context.Request.Body.Position = 0;
             _logger.LogInformation(requestLog.ToString());
-            await _next(context);
         }
     }
 }
