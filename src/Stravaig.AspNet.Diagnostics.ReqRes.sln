@@ -4,6 +4,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example", "Example\Example.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stravaig.AspNet.Diagnostics.ReqRes", "Stravaig.AspNet.Diagnostics.ReqRes\Stravaig.AspNet.Diagnostics.ReqRes.csproj", "{0D3DE8F1-D2CB-4BE4-8E43-51FDF1C2BC6B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "__Build_and_Deploy", "__Build_and_Deploy", "{EEEDBA90-BDD6-4F5F-843F-AEBFD0DB5D22}"
+ProjectSection(SolutionItems) = preProject
+	package-logo.png = package-logo.png
+	..\.github\workflows\build.yml = ..\.github\workflows\build.yml
+EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stravaig.AspNet.Diagnostics.ReqRes.Tests", "Stravaig.AspNet.Diagnostics.ReqRes.Tests\Stravaig.AspNet.Diagnostics.ReqRes.Tests.csproj", "{788CAC4E-FA60-4EE7-B82D-3100D94C4E1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +26,9 @@ Global
 		{0D3DE8F1-D2CB-4BE4-8E43-51FDF1C2BC6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D3DE8F1-D2CB-4BE4-8E43-51FDF1C2BC6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D3DE8F1-D2CB-4BE4-8E43-51FDF1C2BC6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{788CAC4E-FA60-4EE7-B82D-3100D94C4E1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{788CAC4E-FA60-4EE7-B82D-3100D94C4E1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{788CAC4E-FA60-4EE7-B82D-3100D94C4E1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{788CAC4E-FA60-4EE7-B82D-3100D94C4E1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
