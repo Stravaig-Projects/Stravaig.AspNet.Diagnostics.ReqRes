@@ -24,11 +24,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c8aad0cf-d975-4898-b10d-806cca332bcc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.github/workflows/build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../.github/workflows/build.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Stravaig.AspNet.Diagnostics.ReqRes/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Stravaig.AspNet.Diagnostics.ReqRes/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Stravaig.AspNet.Diagnostics.ReqRes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Stravaig.AspNet.Diagnostics.ReqRes/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Stravaig.AspNet.Diagnostics.ReqRes/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Stravaig.AspNet.Diagnostics.ReqRes/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stravaig.AspNet.Diagnostics.ReqRes.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Stravaig.AspNet.Diagnostics.ReqRes.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stravaig.AspNet.Diagnostics.ReqRes/Stravaig.AspNet.Diagnostics.ReqRes.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Stravaig.AspNet.Diagnostics.ReqRes/Stravaig.AspNet.Diagnostics.ReqRes.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,9 +54,9 @@
         <option value="$PROJECT_DIR$/Stravaig.AspNet.Diagnostics.ReqRes.Tests/__TestInfrastructure/TestStartup.cs" />
         <option value="$PROJECT_DIR$/Stravaig.AspNet.Diagnostics.ReqRes.Tests/UnitTest1.cs" />
         <option value="$PROJECT_DIR$/../version.txt" />
-        <option value="$PROJECT_DIR$/../.github/workflows/build.yml" />
         <option value="$PROJECT_DIR$/Stravaig.AspNet.Diagnostics.ReqRes/Stravaig.AspNet.Diagnostics.ReqRes.csproj" />
         <option value="$PROJECT_DIR$/Stravaig.AspNet.Diagnostics.ReqRes.Tests/SimpleHappyPathTests.cs" />
+        <option value="$PROJECT_DIR$/../.github/workflows/build.yml" />
       </list>
     </option>
   </component>
@@ -131,7 +126,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601071496587</updated>
       <workItem from="1601071499576" duration="14937000" />
-      <workItem from="1602261027386" duration="10260000" />
+      <workItem from="1602261027386" duration="10812000" />
     </task>
     <servers />
   </component>
