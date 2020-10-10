@@ -2,19 +2,21 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
-        <PackageVersion>0.0.1-preview</PackageVersion>
         <PackageId>Stravaig.AspNet.Diagnostics.ReqRes</PackageId>
         <Title>Stravaig Request/Response Logging</Title>
         <Authors>Colin Angus Mackay</Authors>
         <Description>A .NET Core middleware package that allows the developer to diagnose issues by logging the requests and responses of their ASP.NET Core application.</Description>
         <Copyright>©2020 Colin Angus Mackay. See licence for more details.</Copyright>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageProjectUrl>https://github.com/Stravaig-Projects/Stravaig.AspNet.Diagnostics.ReqRes</PackageProjectUrl>
         <RepositoryUrl>https://github.com/Stravaig-Projects/Stravaig.AspNet.Diagnostics.ReqRes</RepositoryUrl>
-        <RepositoryType>https://github.com/Stravaig-Projects/Stravaig.AspNet.Diagnostics.ReqRes</RepositoryType>
-        <PackageTags>asp.net core</PackageTags>
+        <PackageTags>asp.net-core logging middleware</PackageTags>
+        <PackageIcon>stravaig-icon.png</PackageIcon>
     </PropertyGroup>
-    
-    
+
+    <ItemGroup>
+        <None Include="stravaig-icon.png" Pack="true" PackagePath=""/>
+    </ItemGroup>
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />

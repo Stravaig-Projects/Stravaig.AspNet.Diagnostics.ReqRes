@@ -6,8 +6,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stravaig.AspNet.Diagnostics
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "__Build_and_Deploy", "__Build_and_Deploy", "{EEEDBA90-BDD6-4F5F-843F-AEBFD0DB5D22}"
 ProjectSection(SolutionItems) = preProject
-	package-logo.png = package-logo.png
 	..\.github\workflows\build.yml = ..\.github\workflows\build.yml
+	..\Set-Version.ps1 = ..\Set-Version.ps1
+	..\version.txt = ..\version.txt
 EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stravaig.AspNet.Diagnostics.ReqRes.Tests", "Stravaig.AspNet.Diagnostics.ReqRes.Tests\Stravaig.AspNet.Diagnostics.ReqRes.Tests.csproj", "{788CAC4E-FA60-4EE7-B82D-3100D94C4E1E}"

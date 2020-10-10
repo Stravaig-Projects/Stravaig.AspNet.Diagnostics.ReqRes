@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\dev\Stravaig.AspNet.Diagnostics.ReqRes\.github\workflows\build.yml" t="Include" />
+    <e p="C:\dev\Stravaig.AspNet.Diagnostics.ReqRes\Set-Version.ps1" t="Include" />
     <e p="C:\dev\Stravaig.AspNet.Diagnostics.ReqRes\src" t="IncludeFlat">
       <e p="__Build_and_Deploy" t="Include" />
       <e p="Example" t="IncludeRecursive">
@@ -104,7 +105,6 @@
           </e>
         </e>
       </e>
-      <e p="package-logo.png" t="Include" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="Stravaig.AspNet.Diagnostics.ReqRes" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
@@ -118,6 +118,7 @@
           </e>
         </e>
         <e p="ReqResDiagnosticMiddleware.cs" t="Include" />
+        <e p="stravaig-icon.png" t="Include" />
         <e p="Stravaig.AspNet.Diagnostics.ReqRes.csproj" t="IncludeRecursive" />
       </e>
       <e p="Stravaig.AspNet.Diagnostics.ReqRes.sln" t="IncludeFlat" />
@@ -134,6 +135,7 @@
         <e p="Stravaig.AspNet.Diagnostics.ReqRes.Tests.csproj" t="IncludeRecursive" />
       </e>
     </e>
+    <e p="C:\dev\Stravaig.AspNet.Diagnostics.ReqRes\version.txt" t="Include" />
     <e p="C:\Users\colin\.nuget\packages\microsoft.net.test.sdk\16.4.0\build\netcoreapp2.1" t="Include">
       <e p="Microsoft.NET.Test.Sdk.Program.cs" t="Include" />
     </e>

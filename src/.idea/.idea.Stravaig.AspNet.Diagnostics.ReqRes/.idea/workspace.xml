@@ -23,10 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8aad0cf-d975-4898-b10d-806cca332bcc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.github/workflows/build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../.github/workflows/build.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Stravaig.AspNet.Diagnostics.ReqRes/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Stravaig.AspNet.Diagnostics.ReqRes/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Stravaig.AspNet.Diagnostics.ReqRes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Stravaig.AspNet.Diagnostics.ReqRes/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Stravaig.AspNet.Diagnostics.ReqRes/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Stravaig.AspNet.Diagnostics.ReqRes/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Startup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stravaig.AspNet.Diagnostics.ReqRes.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Stravaig.AspNet.Diagnostics.ReqRes.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stravaig.AspNet.Diagnostics.ReqRes/Stravaig.AspNet.Diagnostics.ReqRes.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Stravaig.AspNet.Diagnostics.ReqRes/Stravaig.AspNet.Diagnostics.ReqRes.csproj" afterDir="false" />
     </list>
@@ -36,6 +36,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6FF46675-63C9-465B-AE39-F1247B71367F/1/WebApplicationFactory.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/B472876C-267A-4954-B0F5-403C1E9387E1/15/ExceptionHandlerExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9CD23B5E-3B0C-4F80-A807-33BCFD1D82E1/1E0/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8C358A7F-44B0-4B96-BA08-4859017B8F5E/9/StaticFileExtensions.cs" root0="SKIP_HIGHLIGHTING" />
@@ -54,11 +55,12 @@
         <option value="$PROJECT_DIR$/Stravaig.AspNet.Diagnostics.ReqRes/IServiceCollectionExtensions.cs" />
         <option value="$PROJECT_DIR$/Stravaig.AspNet.Diagnostics.ReqRes/IApplicationBuilderExtensions.cs" />
         <option value="$PROJECT_DIR$/Stravaig.AspNet.Diagnostics.ReqRes/ReqResDiagnosticMiddleware.cs" />
-        <option value="$PROJECT_DIR$/../.github/workflows/build.yml" />
-        <option value="$PROJECT_DIR$/Stravaig.AspNet.Diagnostics.ReqRes/Stravaig.AspNet.Diagnostics.ReqRes.csproj" />
         <option value="$PROJECT_DIR$/Example/Startup.cs" />
         <option value="$PROJECT_DIR$/Stravaig.AspNet.Diagnostics.ReqRes.Tests/__TestInfrastructure/TestStartup.cs" />
         <option value="$PROJECT_DIR$/Stravaig.AspNet.Diagnostics.ReqRes.Tests/UnitTest1.cs" />
+        <option value="$PROJECT_DIR$/../version.txt" />
+        <option value="$PROJECT_DIR$/../.github/workflows/build.yml" />
+        <option value="$PROJECT_DIR$/Stravaig.AspNet.Diagnostics.ReqRes/Stravaig.AspNet.Diagnostics.ReqRes.csproj" />
         <option value="$PROJECT_DIR$/Stravaig.AspNet.Diagnostics.ReqRes.Tests/SimpleHappyPathTests.cs" />
       </list>
     </option>
@@ -129,7 +131,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601071496587</updated>
       <workItem from="1601071499576" duration="14937000" />
-      <workItem from="1602261027386" duration="5222000" />
+      <workItem from="1602261027386" duration="10260000" />
     </task>
     <servers />
   </component>
