@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\dev\Stravaig.AspNet.Diagnostics.ReqRes\.github\workflows\build.yml" t="Include" />
+    <e p="C:\dev\Stravaig.AspNet.Diagnostics.ReqRes\.gitignore" t="Include" />
+    <e p="C:\dev\Stravaig.AspNet.Diagnostics.ReqRes\LICENSE" t="Include" />
+    <e p="C:\dev\Stravaig.AspNet.Diagnostics.ReqRes\README.md" t="Include" />
     <e p="C:\dev\Stravaig.AspNet.Diagnostics.ReqRes\Set-Version.ps1" t="Include" />
     <e p="C:\dev\Stravaig.AspNet.Diagnostics.ReqRes\src" t="IncludeFlat">
       <e p="__Build_and_Deploy" t="Include" />
+      <e p="__Documentation" t="Include" />
+      <e p="__Repository_Configuration" t="Include" />
       <e p="Example" t="IncludeRecursive">
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />

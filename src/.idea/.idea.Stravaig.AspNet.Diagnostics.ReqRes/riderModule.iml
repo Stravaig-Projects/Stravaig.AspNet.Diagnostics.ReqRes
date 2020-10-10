@@ -9,6 +9,9 @@
     <content url="file://$USER_HOME$/.nuget/packages/nunit3testadapter/3.15.1/build/netcoreapp2.0/nunit.engine.api.dll" />
     <content url="file://$USER_HOME$/.nuget/packages/nunit3testadapter/3.15.1/build/netcoreapp2.0/nunit.engine.dll" />
     <content url="file://$MODULE_DIR$/../../../.github/workflows/build.yml" />
+    <content url="file://$MODULE_DIR$/../../../.gitignore" />
+    <content url="file://$MODULE_DIR$/../../../LICENSE" />
+    <content url="file://$MODULE_DIR$/../../../README.md" />
     <content url="file://$MODULE_DIR$/../../../Set-Version.ps1" />
     <content url="file://$MODULE_DIR$/../.." />
     <content url="file://$MODULE_DIR$/../../../version.txt" />

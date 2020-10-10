@@ -13,6 +13,17 @@ EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stravaig.AspNet.Diagnostics.ReqRes.Tests", "Stravaig.AspNet.Diagnostics.ReqRes.Tests\Stravaig.AspNet.Diagnostics.ReqRes.Tests.csproj", "{788CAC4E-FA60-4EE7-B82D-3100D94C4E1E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "__Documentation", "__Documentation", "{5DD6178F-FD76-4173-AF70-537904BA8CDF}"
+ProjectSection(SolutionItems) = preProject
+	..\LICENSE = ..\LICENSE
+	..\README.md = ..\README.md
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "__Repository_Configuration", "__Repository_Configuration", "{B53FD7A2-EC1F-4F9B-B857-B0A0830F2C7A}"
+ProjectSection(SolutionItems) = preProject
+	..\.gitignore = ..\.gitignore
+EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
