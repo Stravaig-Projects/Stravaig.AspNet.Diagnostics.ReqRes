@@ -13,11 +13,17 @@ namespace Stravaig.AspNet.Diagnostics.ReqRes
     public class ReqResDiagnosticMiddleware
     {
         private readonly RequestDelegate _next;
+        private readonly ReqResLoggingSettings _settings;
         private readonly ILogger<ReqResDiagnosticMiddleware> _logger;
 
-        public ReqResDiagnosticMiddleware(RequestDelegate next, ILoggerFactory loggerFactory)
+        public ReqResDiagnosticMiddleware(
+            RequestDelegate next, 
+            ReqResLoggingSettings settings,
+            ILoggerFactory loggerFactory
+            )
         {
             _next = next;
+            _settings = settings;
             _logger = loggerFactory.CreateLogger<ReqResDiagnosticMiddleware>();
         }
 
@@ -38,10 +44,10 @@ namespace Stravaig.AspNet.Diagnostics.ReqRes
         private async Task LogResponse(HttpContext context)
         {
             var res = context.Response;
-            StringBuilder requestLog = new StringBuilder("Response:"+Environment.NewLine);
+            StringBuilder responseLog = new StringBuilder("Response:"+Environment.NewLine);
             foreach (var header in res.Headers)
             {
-                requestLog.AppendLine($"{header.Key}: {string.Join(";", header.Value.Cast<string>())}");
+                responseLog.AppendLine($"{header.Key}: {string.Join(";", header.Value.Cast<string>())}");
             }
 
             res.Body.Seek(0, SeekOrigin.Begin);
@@ -49,11 +55,11 @@ namespace Stravaig.AspNet.Diagnostics.ReqRes
             var content = await responseReader.ReadToEndAsync();
             if (!string.IsNullOrEmpty(content))
             {
-                requestLog.AppendLine();
-                requestLog.AppendLine(content);
+                responseLog.AppendLine();
+                responseLog.AppendLine(content);
             }
 
-            _logger.LogInformation(requestLog.ToString());
+            _logger.Log(_settings.LogLevel, responseLog.ToString());
         }
 
         private async Task LogRequest(HttpContext context)
@@ -76,7 +82,7 @@ namespace Stravaig.AspNet.Diagnostics.ReqRes
             }
 
             context.Request.Body.Position = 0;
-            _logger.LogInformation(requestLog.ToString());
+            _logger.Log(_settings.LogLevel, requestLog.ToString());
         }
     }
 }

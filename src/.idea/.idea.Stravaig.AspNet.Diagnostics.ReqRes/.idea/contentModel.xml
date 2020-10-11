@@ -123,12 +123,14 @@
           </e>
         </e>
         <e p="ReqResDiagnosticMiddleware.cs" t="Include" />
+        <e p="ReqResLoggingSettings.cs" t="Include" />
         <e p="stravaig-icon.png" t="Include" />
         <e p="Stravaig.AspNet.Diagnostics.ReqRes.csproj" t="IncludeRecursive" />
       </e>
       <e p="Stravaig.AspNet.Diagnostics.ReqRes.sln" t="IncludeFlat" />
       <e p="Stravaig.AspNet.Diagnostics.ReqRes.Tests" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="LogLevelsTests.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
