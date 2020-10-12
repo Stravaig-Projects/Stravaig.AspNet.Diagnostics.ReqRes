@@ -62,3 +62,32 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 }
 ```
 
+## Settings
+
+In the configuration the settings are at:
+```
+{
+  "Stravaig" :{
+    "ReqResLogging":{
+      "Enabled": true,
+      "LogLevel": "Information"
+    }
+  }
+}
+```
+
+Or, you can configure it directly with the `ReqResLoggingSettings` class.
+
+### Enabled
+
+Default: true
+
+When true, this will ensure that the middleware is added to the pipeline when `app.UseRequestResponseDiagnostics()` is called, otherwise the middleware won't be added. This allows the call to stay in the application and the pipeline based on a configuration setting.
+
+### LogLevel
+
+Default: Information
+
+This maps to the [Microsoft.Extensions.Logging.LogLevel enum](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.logging.loglevel?view=dotnet-plat-ext-3.1).
+It defines the log level the request/response logs are to be logged at.
+
