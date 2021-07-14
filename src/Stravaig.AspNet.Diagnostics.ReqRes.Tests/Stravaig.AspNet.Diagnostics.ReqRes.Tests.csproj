@@ -13,7 +13,7 @@
         <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.1" />
         <PackageReference Include="Shouldly" Version="4.0.3" />
-        <PackageReference Include="Stravaig.Extensions.Logging.Diagnostics" Version="0.4.1" />
+        <PackageReference Include="Stravaig.Extensions.Logging.Diagnostics" Version="1.0.1" />
     </ItemGroup>
 
     <ItemGroup>
